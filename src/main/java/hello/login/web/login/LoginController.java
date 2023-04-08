@@ -116,7 +116,7 @@ public class LoginController {
 
     @PostMapping("/logout")
     public String logoutV3(HttpServletRequest request) {
-        true 면 무조건 만들기 때문에 false 를 준다.
+//        true 면 무조건 만들기 때문에 false 를 준다.
         HttpSession session = request.getSession(false);
         if (session != null) {
             session.invalidate();
